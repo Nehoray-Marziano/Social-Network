@@ -1,0 +1,81 @@
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1275a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1275a.dir/build.make CMakeFiles/cmTC_1275a.dir/build
+make[1]: Entering directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: *** No rule to make target '/users/studs/bsc/2019/marziann/Desktop/203330360', needed by 'CMakeFiles/cmTC_1275a.dir/feature_tests.c.o'.  Stop.
+make[1]: Leaving directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_1275a/fast' failed
+make: *** [cmTC_1275a/fast] Error 2
+
+
+
+Detecting CXX [-std=c++1z] compiler features failed to compile with the following output:
+Change Dir: /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_30eb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30eb0.dir/build.make CMakeFiles/cmTC_30eb0.dir/build
+make[1]: Entering directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: *** No rule to make target '/users/studs/bsc/2019/marziann/Desktop/203330360', needed by 'CMakeFiles/cmTC_30eb0.dir/feature_tests.cxx.o'.  Stop.
+make[1]: Leaving directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_30eb0/fast' failed
+make: *** [cmTC_30eb0/fast] Error 2
+
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6feaf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6feaf.dir/build.make CMakeFiles/cmTC_6feaf.dir/build
+make[1]: Entering directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6feaf.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6feaf.dir/CheckSymbolExists.c.o   -c "/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_6feaf
+/users/studs/bsc/2019/marziann/Desktop/clion/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6feaf.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_6feaf.dir/CheckSymbolExists.c.o  -o cmTC_6feaf 
+CMakeFiles/cmTC_6feaf.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6feaf.dir/build.make:86: recipe for target 'cmTC_6feaf' failed
+make[1]: *** [cmTC_6feaf] Error 1
+make[1]: Leaving directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_6feaf/fast' failed
+make: *** [cmTC_6feaf/fast] Error 2
+
+File /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5803/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5803.dir/build.make CMakeFiles/cmTC_d5803.dir/build
+make[1]: Entering directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5803.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d5803.dir/CheckFunctionExists.c.o   -c /users/studs/bsc/2019/marziann/Desktop/clion/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5803
+/users/studs/bsc/2019/marziann/Desktop/clion/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5803.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d5803.dir/CheckFunctionExists.c.o  -o cmTC_d5803 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d5803.dir/build.make:86: recipe for target 'cmTC_d5803' failed
+make[1]: *** [cmTC_d5803] Error 1
+make[1]: Leaving directory '/users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d5803/fast' failed
+make: *** [cmTC_d5803/fast] Error 2
+
+

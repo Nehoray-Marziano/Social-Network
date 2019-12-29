@@ -1,0 +1,24 @@
+/users/studs/bsc/2019/marziann/Desktop/clion/CLion-2018.3.2/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   chrono
+--   date_time
+--   atomic
+-- Configuring done
+CMake Error at CMakeLists.txt:18 (add_executable):
+  Cannot find source file:
+
+    makefile
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:18 (add_executable):
+  No SOURCES given to target: Client
+
+
+-- Build files have been written to: /users/studs/bsc/2019/marziann/Desktop/203330360#_209483122/Client/cmake-build-debug
